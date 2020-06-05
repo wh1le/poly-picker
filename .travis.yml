@@ -13,5 +13,5 @@ before_install:
   - rake db:create
   - rake db:migrate
 script:
-  - rubocop
+  - rubocop app/*
   - rspec spec
