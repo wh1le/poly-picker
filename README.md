@@ -1,4 +1,5 @@
 # Poly Picker
+![Preview](https://github.com/wh1le/poly-picker/blob/master/docs/screenshot.png)
 
 React and Rails integration with [Leaflet](https://leafletjs.com/).
 
