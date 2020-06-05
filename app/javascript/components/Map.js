@@ -36,8 +36,7 @@ const drawPluginOptions = (layersProvider) => {
   }
 }
 
-// I tried my best to not expose API key, but there is some problems with the DNS between this provider and HEROKU
-const PROVIDER_PATH = 'https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png?api_key=82539fed-4ccd-4582-ac29-49da0267d04a'
+const PROVIDER_PATH = 'https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png';
 
 class Map extends Component {
   constructor(props) {

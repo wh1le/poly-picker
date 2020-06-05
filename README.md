@@ -1,8 +1,10 @@
 # Poly Picker
-![Preview](https://github.com/wh1le/poly-picker/blob/master/docs/screenshot.png)
+
+![CI](https://travis-ci.org/wh1le/poly-picker.svg?branch=master)
 
 React and Rails integration with [Leaflet](https://leafletjs.com/).
 
+![Preview](https://github.com/wh1le/poly-picker/blob/master/docs/screenshot.png)
 ## Description
 
 This program provides the ability to draw polygons on the map.
