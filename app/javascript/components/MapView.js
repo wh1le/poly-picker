@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 
+import showNotification from '../utils/showNotification';
+
 import PolygonsList from './PolygonsList'
 import Map from './Map'
 
@@ -26,6 +28,7 @@ class MapView extends Component {
 
   polygonSavedHandler = (geoJSON) => {
     axios.post('/api/polygons', { polygon: geoJSON  }).then(response => {
+      showNotification('Polygon saved 🎉')
       this.setState({
         ...this.state,
         polygons: [response.data, ...this.state.polygons],

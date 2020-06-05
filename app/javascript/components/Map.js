@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
-import L from 'leaflet'
-require('leaflet-draw')
+import L from 'leaflet';
+require('leaflet-draw');
 
+import askForCurrentLocation from '../utils/askForCurrentLocation';
 import showNotification from '../utils/showNotification';
 
 const drawPluginOptions = (layersProvider) => {
@@ -44,6 +45,8 @@ class Map extends Component {
       center: [38.680, -9.156],
       zoom: 13
     })
+
+    askForCurrentLocation(this.point);
 
     this.map.addLayer(this.editableLayers);
 
