@@ -1,0 +1,13 @@
+  
+langauge: ruby
+rvm:
+  - 2.6.5
+env:
+  'ENV=ci'
+cache: bundler
+before_install:
+  - gem update --system
+  - bundle install
+script:
+  - rubocop
+  - rspec spec

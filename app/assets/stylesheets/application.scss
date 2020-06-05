@@ -1,0 +1,56 @@
+@import 'buttons';
+@import 'list';
+
+$main-background: white;
+
+a, span, p, h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  height:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+  background-color: $main-background;
+  width: 100%;
+
+  -webkit-box-shadow: 6px 4px 5px -2px rgba(0,0,0,0.28);
+  -moz-box-shadow: 6px 4px 5px -2px rgba(0,0,0,0.28);
+  box-shadow: 6px 4px 5px -2px rgba(0,0,0,0.28);
+
+  .logo {
+    padding-left: 5rem;
+  }
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+  #map { 
+    height: 100%; 
+    width: 75%;
+  }
+
+  .workarea {
+    height: 100%;
+    overflow: hidden;
+    z-index: 1000;
+    width: 25%;
+    background-color: $main-background;
+    height: 100%;
+    padding-left: 20px;
+    .polygons-list {
+      overflow-y: scroll;
+      height: 100%;
+    }
+  }
+}

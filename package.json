@@ -1,0 +1,35 @@
+{
+  "name": "polypicker",
+  "private": true,
+  "dependencies": {
+    "@babel/preset-react": "^7.10.1",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "4.2.2",
+    "axios": "^0.19.2",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "leaflet": "^1.6.0",
+    "leaflet-draw": "^1.0.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react_ujs": "^2.6.1",
+    "toastify-js": "^1.8.0",
+    "turbolinks": "^5.2.0"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "prettier": "^2.0.5",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "main": "index.js",
+  "author": "Nikita Miloserdov <nmiloserdov09@gmail.com>",
+  "license": "MIT"
+}
