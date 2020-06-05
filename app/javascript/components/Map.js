@@ -6,6 +6,9 @@ require('leaflet-draw');
 import askForCurrentLocation from '../utils/askForCurrentLocation';
 import showNotification from '../utils/showNotification';
 
+import 'leaflet/dist/leaflet.css';
+import 'leaflet-draw/dist/leaflet.draw.css';
+
 const drawPluginOptions = (layersProvider) => {
   return {
     position: 'topright',

@@ -1,5 +1,7 @@
 import Toastify from 'toastify-js';
 
+import 'toastify-js/src/toastify.css';
+
 const showNotification = (message) => (
   Toastify({
     text: message,
