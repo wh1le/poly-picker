@@ -20,6 +20,9 @@ $ git clone git@github.com:wh1le/poly-picker.git
 ```
 First make sure you have ruby-2.6.5 installed. If you have it
 ```
+$ yarn install
+```
+```
 $ bundle install
 ```
 ```
