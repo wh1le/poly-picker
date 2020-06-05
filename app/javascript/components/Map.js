@@ -33,6 +33,9 @@ const drawPluginOptions = (layersProvider) => {
   }
 }
 
+// I tried my best to not expose API key, but there is some problems with the DNS between this provider and HEROKU
+const PROVIDER_PATH = 'https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png?api_key=82539fed-4ccd-4582-ac29-49da0267d04a'
+
 class Map extends Component {
   constructor(props) {
     super(props)
@@ -50,7 +53,7 @@ class Map extends Component {
 
     this.map.addLayer(this.editableLayers);
 
-    let provider = L.tileLayer('https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png', {
+    let provider = L.tileLayer('https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png?api_key=82539fed-4ccd-4582-ac29-49da0267d04a', {
       maxZoom: 20,
       attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
     })
